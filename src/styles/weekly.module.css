@@ -1,0 +1,42 @@
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+.weeklyCard{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid grey ; */
+    margin: 50px 0px ;
+    padding: 20px ;
+    background-color: white;
+}
+
+.habitTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.weeklyDate{
+   margin-top: 10px;
+   display: flex ;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.singleDay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #ddd; */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+

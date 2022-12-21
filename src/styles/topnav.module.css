@@ -1,0 +1,35 @@
+ .topnav{
+    background-color: azure;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+    width:100%;
+    padding: 5px;
+ }
+
+.topnav ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-decoration: none ;
+   list-style-type: none ;
+   width: 50%;
+}
+
+.topnav ul li{
+    list-style-type: none;
+    font-weight: 400;
+    text-decoration: none ;
+    font-size: 20px;
+}
+
+.decorationLogo{
+   text-decoration: none ;
+   border-radius: 5px ;
+   font-size: 20px ;
+   font-weight: 600;
+}
+
+.decoration{
+   text-decoration: none ;
+}
