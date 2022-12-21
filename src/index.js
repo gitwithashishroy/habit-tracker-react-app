@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import "./index.css";
 import App from "./components/App";
 import store from "./store";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter , BrowserRouter } from "react-router-dom";
 const routerBaseName = process.env.PUBLIC_URL;
 
 console.log("store ", store);
@@ -20,10 +20,10 @@ console.log("store ", store);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode >
-    <BrowserRouter basename={routerBaseName}>
+    <HashRouter basename={routerBaseName}>
     <Provider store={store} >
       <App />
     </Provider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );

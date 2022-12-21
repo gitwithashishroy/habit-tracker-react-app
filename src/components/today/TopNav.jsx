@@ -12,7 +12,7 @@ const TopNav = () => {
           </li>
 
           <li>
-            <Link basename={routerBaseName} className={styles.decoration} to='/'>Home  </Link>
+            <Link basename={routerBaseName} className={styles.decoration} to='/'> Home  </Link>
           </li>
 
           <li>
