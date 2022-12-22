@@ -39,7 +39,7 @@ const HabitCard = (props) => {
         </div>
 
         <div className={styles.weeklyProgress}>
-          <span>Target : {target} days / Week</span>
+          <span>Target : {target} days / week</span>
           <span>Progress :{progress}  / {target} </span>
         </div>
       </div>

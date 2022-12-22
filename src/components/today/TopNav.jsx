@@ -1,24 +1,31 @@
 import React from 'react' ; 
 import { Link } from 'react-router-dom';
 import styles from '../../styles/topnav.module.css' ; 
-const routerBaseName = process.env.PUBLIC_URL;
 
 const TopNav = () => {
+  const d = new Date();
+  const d1 = d.toDateString() ; 
+
+
   return (
     <div className={styles.topnav}>   
-        <ul>
-          <li>
-            <Link basename={routerBaseName} className={styles.decorationLogo} to='/'> Habit Tracker React </Link>
-          </li>
+        <div className={styles.navLeft}>
+          <div className={styles.navLeftElem}>
+            <Link className={styles.decorationLogo} to='/'> Habit Tracker React </Link>
+          </div>
 
-          <li>
-            <Link basename={routerBaseName} className={styles.decoration} to='/'> Home  </Link>
-          </li>
+          <div className={styles.navLeftElem}>
+            <Link className={styles.decoration} to='/'> Home  </Link>
+          </div>
 
-          <li>
-            <Link basename={routerBaseName} className={styles.decoration} to='/weekly'> Weekly </Link>
-          </li>
-        </ul>
+          <div className={styles.navLeftElem}>
+            <Link className={styles.decoration} to='/weekly'> Weekly </Link>
+          </div>
+        </div>
+
+        <div className={styles.navRightElem}>
+          {`${d1}`}
+        </div>
     </div>
   )
 }

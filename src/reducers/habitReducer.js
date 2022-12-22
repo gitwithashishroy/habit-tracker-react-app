@@ -44,11 +44,6 @@ const months = [
 
   const weekdays = [
        {
-        day : `${date0} ${month0}` , 
-        doneStatus : ""
-       }, 
-
-       {
         day : `${date1} ${month1}` , 
         doneStatus : ""
        }, 
@@ -72,6 +67,11 @@ const months = [
         day : `${date5} ${month5}` , 
         doneStatus : ""
        }, 
+
+       {
+        day : `${date6} ${month6}` , 
+        doneStatus : ""
+       }, 
   ] ; 
 
 
@@ -86,9 +86,17 @@ const initialHabitsState = {
     {
       id: 2,
       name: "Reading Book",
-      doneStatus: "",
+      doneStatus: "done",
       weekdays : weekdays , 
-    }
+    } , 
+
+    {
+      id: 3,
+      name: "Go To Gym",
+      doneStatus: "notdone",
+      weekdays : weekdays , 
+    } , 
+
   ],
 };
 

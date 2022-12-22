@@ -20,6 +20,9 @@ const Home = () => {
   
   return (
     <div className={styles.container}>
+         <div className={styles.todaysDate}>
+              {}
+         </div>
          <div className={styles.addHabit}>
                  <input type="text" placeholder="Add Habit..." value={inputData} onChange={(event)=>setInputData(event.target.value)} />
                  <i class="fa-solid fa-plus" onClick={handleAddHabit} ></i>
