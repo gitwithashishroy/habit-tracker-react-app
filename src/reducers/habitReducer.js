@@ -14,6 +14,7 @@ const months = [
     "NOV",
     "DEC",
   ];
+  
   const d0 = new Date();
   const month0 = months[d0.getMonth()];
   const date0 = d0.getDate();
@@ -83,6 +84,7 @@ const initialHabitsState = {
       doneStatus: "",
       weekdays : weekdays , 
     },
+
     {
       id: 2,
       name: "Reading Book",
@@ -104,6 +106,8 @@ export function habitsReducer(state = initialHabitsState, action) {
   switch (action.type) {
     case ADD_HABIT:
       const { id, name } = action.payload;
+
+      
 
       return {
         ...state,
