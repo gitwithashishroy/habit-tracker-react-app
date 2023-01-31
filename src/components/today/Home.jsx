@@ -1,8 +1,7 @@
 import React , { useState } from "react" ; 
 import { useSelector, useDispatch } from "react-redux";
 import styles from "../../styles/home.module.css";
-import { addHabit, addWeekStatus } from "../../action";
-import { useEffect } from "react";
+import { addHabit } from "../../action";
 import HabitCard  from "./HabitCard";
 
 
